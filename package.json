@@ -1,0 +1,19 @@
+{
+  "name": "codeclimate",
+  "description": "Wrapper around CodeClimate CLI",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Gympass",
+  "license": "MIT",
+  "main": "restore/index.js",
+  "scripts": {
+    "build": "ncc build -mo before/ src/before.js && ncc build -mo after/ src/after.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/exec": "^1.1.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.1"
+  }
+}

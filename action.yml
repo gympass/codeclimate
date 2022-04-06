@@ -1,0 +1,7 @@
+name: 'CodeClimate'
+description: 'Wrapper around the CodeClimate CLI'
+author: 'Victor Gama <victor.gama@gympass.com>'
+runs:
+  using: 'node12'
+  main: 'before/index.js'
+  post: 'after/index.js'
